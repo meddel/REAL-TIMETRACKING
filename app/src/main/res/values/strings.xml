@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RealTime Tracking</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="update">Update</string>
+    <string name="latitude">latitude</string>
+    <string name="longitude">longitude</string>
+</resources>

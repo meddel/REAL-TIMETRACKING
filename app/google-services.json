@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "474526686012",
+    "firebase_url": "https://evident-healer-277220.firebaseio.com",
+    "project_id": "evident-healer-277220",
+    "storage_bucket": "evident-healer-277220.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474526686012:android:4aad550153207862d1dc39",
+        "android_client_info": {
+          "package_name": "com.mostdanger.realtimetracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474526686012-ktjlr7i8tekdpg85p6uj7cjv9rrf643e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mostdanger.realtimetracking",
+            "certificate_hash": "6609e807cbafd1e65725a22bdabbc97430f735e7"
+          }
+        },
+        {
+          "client_id": "474526686012-1em8ukdbhg04cemhojeirnpvm5hbs04e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWHIV5xPtNntIYpHvi0BUmePE4XUq4uWk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474526686012-1em8ukdbhg04cemhojeirnpvm5hbs04e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
