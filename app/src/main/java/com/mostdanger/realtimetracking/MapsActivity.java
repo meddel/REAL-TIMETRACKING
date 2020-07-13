@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.QuickContactBadge;
 
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -66,13 +67,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     Arrays.sort(stringLat);
                     String latitude = stringLat[stringLat.length-1].split("=")[1];
 
-                    String[] stringLon=dbLatitude.split(", ");
+                    String[] stringLon=dbLongitude.split(", ");
                     Arrays.sort(stringLon);
                     String longitude = stringLon[stringLon.length-1].split("=")[1];
 
                     LatLng latLng= new LatLng(Double.parseDouble(latitude),Double.parseDouble(longitude));
                     mMap.addMarker(new MarkerOptions().position(latLng).title(latitude+" , "+longitude));
-                    mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 16));
 
                 }
                 catch (Exception e){
@@ -90,9 +91,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                databaseReference.child("latitude").push().setValue(43.1548);
+                databaseReference.child("latitude").push().setValue(Double.parseDouble(String.valueOf(editText_Latitude.getText())));
                 //  databaseReference.child("longitude").push().setValue(editText_Longitude.getText());
-                databaseReference.child("longitude").push().setValue(5.1648);
+                databaseReference.child("longitude").push().setValue(Double.parseDouble(String.valueOf(editText_Longitude.getText())));
             }
         });
     }
